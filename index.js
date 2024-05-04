@@ -21,6 +21,8 @@ function handleKeyPress(event) {
     deleteFromDisplay();
   } else if (allowedInputs.test(key)) {
     appendToDisplay(key);
+  } else if (event.key === "Enter") {
+    calculate();
   }
 }
 
